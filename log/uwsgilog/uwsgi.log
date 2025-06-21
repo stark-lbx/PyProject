@@ -1,0 +1,148 @@
+*** Starting uWSGI 2.0.28 (64bit) on [Thu Feb 27 14:59:27 2025] ***
+compiled with version: 11.4.0 on 27 February 2025 06:21:54
+os: Linux-6.8.0-52-generic #53~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Wed Jan 15 19:18:46 UTC 2
+nodename: ubuntu
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 2
+current working directory: /home/stark/class
+writing pidfile to uwsgi.pid
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /home/stark/class
+your processes number limit is 15164
+your memory page size is 4096 bytes
+detected max file descriptor number: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+probably another instance of uWSGI is running on the same address (0.0.0.0:8080).
+bind(): Address already in use [core/socket.c line 769]
+*** Starting uWSGI 2.0.28 (64bit) on [Thu Feb 27 15:05:47 2025] ***
+compiled with version: 11.4.0 on 27 February 2025 06:21:54
+os: Linux-6.8.0-52-generic #53~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Wed Jan 15 19:18:46 UTC 2
+nodename: ubuntu
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 2
+current working directory: /home/stark/class
+writing pidfile to uwsgi.pid
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /home/stark/class
+your processes number limit is 15164
+your memory page size is 4096 bytes
+detected max file descriptor number: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on 0.0.0.0:8080 fd 4
+uwsgi socket 0 bound to TCP address 127.0.0.1:45465 (port auto-assigned) fd 3
+Python version: 3.10.12 (main, Feb  4 2025, 14:57:36) [GCC 11.4.0]
+Python main interpreter initialized at 0x5fb30af0e6e0
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 203152 bytes (198 KB) for 1 cores
+*** Operational MODE: single process ***
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 10208)
+spawned uWSGI worker 1 (pid: 10210, cores: 1)
+spawned uWSGI http 1 (pid: 10211)
+unable to find "application" callable in file app.py
+unable to load app 0 (mountpoint='') (callable not found or import error)
+*** no app loaded. going in full dynamic mode ***
+gateway "uWSGI http 1" has been buried (pid: 10211)
+...gracefully killing workers...
+Gracefully killing worker 1 (pid: 10210)...
+worker 1 buried after 1 seconds
+binary reloading uWSGI...
+chdir() to /home/stark/class
+closing all non-uwsgi socket fds > 2 (max_fd = 1048576)...
+found fd 3 mapped to socket 0 (127.0.0.1:45465)
+running /usr/local/bin/uwsgi
+[uWSGI] getting INI configuration from uwsgi.ini
+*** Starting uWSGI 2.0.28 (64bit) on [Thu Feb 27 15:06:31 2025] ***
+compiled with version: 11.4.0 on 27 February 2025 06:21:54
+os: Linux-6.8.0-52-generic #53~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Wed Jan 15 19:18:46 UTC 2
+nodename: ubuntu
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 2
+current working directory: /home/stark/class
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /home/stark/class
+your processes number limit is 15164
+your memory page size is 4096 bytes
+detected max file descriptor number: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on 0.0.0.0:8080 fd 5
+uwsgi socket 0 bound to TCP address 127.0.0.1:35929 (port auto-assigned) fd 4
+Python version: 3.10.12 (main, Feb  4 2025, 14:57:36) [GCC 11.4.0]
+Python main interpreter initialized at 0x63f174edaba0
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 203152 bytes (198 KB) for 1 cores
+*** Operational MODE: single process ***
+*** uWSGI is running in multiple interpreter mode ***
+gracefully (RE)spawned uWSGI master process (pid: 10208)
+spawned uWSGI worker 1 (pid: 10282, cores: 1)
+spawned uWSGI http 1 (pid: 10283)
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x63f174edaba0 pid: 10282 (default app)
+[pid: 10282|app: 0|req: 1/1] 192.168.30.1 () {36 vars in 531 bytes} [Thu Feb 27 15:06:38 2025] POST /sign?userid=17838263702&date=2025-02-27 => generated 11 bytes in 5 msecs (HTTP/1.1 200) 1 headers in 108 bytes (2 switches on core 0)
+[pid: 10282|app: 0|req: 2/2] 192.168.30.1 () {38 vars in 602 bytes} [Thu Feb 27 16:52:25 2025] POST /sign?userid=17838263702&date=2025-02-27 => generated 96741 bytes in 147 msecs (HTTP/1.1 500) 1 headers in 63 bytes (2 switches on core 0)
+[pid: 10282|app: 0|req: 3/3] 192.168.30.1 () {38 vars in 611 bytes} [Thu Feb 27 16:53:06 2025] POST /login?userid=17838263702&password=123456abc => generated 96764 bytes in 14 msecs (HTTP/1.1 500) 1 headers in 63 bytes (2 switches on core 0)
+[pid: 10282|app: 0|req: 4/4] 192.168.30.1 () {38 vars in 611 bytes} [Thu Feb 27 16:54:07 2025] POST /login?userid=17838263702&password=123456abc => generated 96764 bytes in 10 msecs (HTTP/1.1 500) 1 headers in 63 bytes (2 switches on core 0)
+Thu Feb 27 16:57:59 2025 - uWSGI worker 1 error: the master disconnected from this worker. Shutting down the worker.
+*** Starting uWSGI 2.0.28 (64bit) on [Thu Feb 27 16:58:17 2025] ***
+compiled with version: 11.4.0 on 27 February 2025 06:21:54
+os: Linux-6.8.0-52-generic #53~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Wed Jan 15 19:18:46 UTC 2
+nodename: ubuntu
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 2
+current working directory: /home/stark/class
+writing pidfile to uwsgi.pid
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /home/stark/class
+your processes number limit is 15164
+your memory page size is 4096 bytes
+detected max file descriptor number: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on 0.0.0.0:8080 fd 4
+uwsgi socket 0 bound to TCP address 127.0.0.1:41517 (port auto-assigned) fd 3
+Python version: 3.10.12 (main, Feb  4 2025, 14:57:36) [GCC 11.4.0]
+Python main interpreter initialized at 0x64b4086c06e0
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 203152 bytes (198 KB) for 1 cores
+*** Operational MODE: single process ***
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 12481)
+spawned uWSGI worker 1 (pid: 12483, cores: 1)
+spawned uWSGI http 1 (pid: 12484)
+redisstore init
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x64b4086c06e0 pid: 12483 (default app)
+2025-02-27 16:58:30 | ERROR | Error.py | 18 | excute
+Traceback (most recent call last):
+  File "/home/stark/class/./Error.py", line 16, in wrapper
+    return func(*args, **kwargs)
+  File "app.py", line 94, in POST
+    ret = Account.HandleLogin(userid, session)
+  File "/home/stark/class/./Error.py", line 30, in wrapper
+    res = func(*args, **kwargs)
+  File "/home/stark/class/./Account.py", line 166, in HandleLogin
+    cursor.excute(sqlStr, (now, userid))
+  File "/home/stark/.local/lib/python3.10/site-packages/dbutils/steady_db.py", line 692, in __getattr__
+    return getattr(self._cursor, name)
+  File "/home/stark/.local/lib/python3.10/site-packages/pymysql/cursors.py", line 378, in __getattr__
+    raise AttributeError(name)
+AttributeError: excute
+__setitem__+++++++++++++++
+[pid: 12483|app: 0|req: 1/1] 192.168.30.1 () {38 vars in 611 bytes} [Thu Feb 27 16:58:30 2025] POST /login?userid=17838263702&password=123456abc => generated 4 bytes in 14 msecs (HTTP/1.1 200) 1 headers in 108 bytes (2 switches on core 0)
+__setitem__+++++++++++++++
+[pid: 12483|app: 0|req: 2/2] 192.168.30.1 () {38 vars in 603 bytes} [Thu Feb 27 16:59:27 2025] POST /sign?userid=17838263702&date=2025-02-27 => generated 11 bytes in 6 msecs (HTTP/1.1 200) 1 headers in 108 bytes (2 switches on core 0)

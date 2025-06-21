@@ -1,0 +1,15 @@
+2025-02-27 16:58:30 | ERROR | Error.py | 18 | excute
+Traceback (most recent call last):
+  File "/home/stark/class/./Error.py", line 16, in wrapper
+    return func(*args, **kwargs)
+  File "app.py", line 94, in POST
+    ret = Account.HandleLogin(userid, session)
+  File "/home/stark/class/./Error.py", line 30, in wrapper
+    res = func(*args, **kwargs)
+  File "/home/stark/class/./Account.py", line 166, in HandleLogin
+    cursor.excute(sqlStr, (now, userid))
+  File "/home/stark/.local/lib/python3.10/site-packages/dbutils/steady_db.py", line 692, in __getattr__
+    return getattr(self._cursor, name)
+  File "/home/stark/.local/lib/python3.10/site-packages/pymysql/cursors.py", line 378, in __getattr__
+    raise AttributeError(name)
+AttributeError: excute
